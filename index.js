@@ -156,6 +156,7 @@ app.get('/users/:email', async (req, res) => {
     
   } finally {
     //   await client.close();
+    //close it
   }
 }
 run().catch(console.dir);
