@@ -77,7 +77,7 @@ app.post('/reviews', async (req, res) => {
   res.json(result);
 })
 
-//GET reviews
+//GET reviews code
 app.get('/reviews', async (req, res) => {
   const cursor = reviewCollection.find({});
   const reviews = await cursor.toArray();
@@ -156,7 +156,7 @@ app.get('/users/:email', async (req, res) => {
     
   } finally {
     //   await client.close();
-    //close it
+    //close it 
   }
 }
 run().catch(console.dir);
@@ -173,7 +173,6 @@ app.get("/n", (req, res) => {
 app.listen(port, () => {
   console.log("listening to this port", port);
 });
-
 
 
 
